@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html dir="ltr" lang="en">
 
 <head>
@@ -114,6 +114,149 @@
  
 }
 
+
+
+
+
+
+.our-team-section {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.our-team-section:before {
+    position: absolute;
+    top: -0;
+    left: 0;
+    content: " ";
+    background: url(img/service-section-bottom.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+.our-team {
+    
+    padding: 30px 0 40px;
+    background: #f9f9f9;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid #00325a;
+}
+.our-team:hover{
+    border-bottom: 5px solid #2f2f2f;
+}
+
+.our-team .pic{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+.our-team .pic:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #00325a;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:before{
+ height: 100%;
+    background: #2f2f2f; 
+ }
+.our-team .pic:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffffff00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:after{
+    background: #7ab92d;
+}
+.our-team .pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+    position: relative;
+    z-index: 2;
+}
+.our-team:hover .pic img{
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+.our-team .team-content{ margin-bottom: 30px; }
+.our-team .title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #4e5052;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform:capitalize;
+}
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #2f2f2f;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social{ bottom: 0; }
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover{
+    color: #2f2f2f;
+    background: #f7f5ec;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width : 600px)
 {
 .thumb
@@ -122,14 +265,7 @@
     text-align:center;
 }
 }
-.by_yas1
-{
-  z-index: 1;
-  border-width: 1;
-  background-color: red;
-  width: 100%;
-  height: 400px;
-}
+
 @media (max-width : 610px)
 {
     .aboutbanner
@@ -140,13 +276,7 @@
      {
          padding-top:0px;
      }
-     .by_yas1
-  {
-      border-width: 1;
-      background-color: red;
-      width: 100%;
-      height: 200px;
-  }
+  
 }
 
 
@@ -306,16 +436,6 @@
           </div>
         </div>
             </div>
-            <div class="col-md-6">
-              <div class="video-popup">                
-                <a href="https://www.youtube.com/watch?v=pW1uVUg5wXM" data-lightbox-gallery="youtube-video" title="Video">
-                  <img alt="" src="images/about/5.html" class="img-responsive img-fullwidth">
-                </a>
-              </div>
-            </div>
-          </div>
-                </div>
-              </li>
 
 
 
@@ -342,7 +462,7 @@
               </li>
 
 
-              <li><a href="faculty.html">Faculty </a></li>
+              <li><a href="#">Faculty </a></li>
                <li><a href="#">Result </a></li>
                 
             
@@ -426,44 +546,362 @@
     
     
     <!--yas-->
- <div class="section-content">
+ 
            
-          <div class="row">
+ 
+    
+        
 
-            <div class="by_yas1">
-              <img src="back.png" style="width: 100%;height: 100%">
-            </div>
-    <!-- Section: Experts Details -->
-        <section>
+
+
+
+
+
+
+
+    <section class="our-team-section">
       <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="our-team">
+                  <div class="pic">
+                      <img src="images/faculty/ramchandra.jpg">
+                  </div>
+                  <div class="team-content">
+                      <h3 class="title">Ramchandra S Yadav</h3>
+                      <span class="post">Astt. Teacher</span>
+                  </div>
+                  <ul class="social">
+                      <li>
+                          <a href="#"  target="_blank"class="fa fa-facebook"></a>
+                      </li>
+                      <li>
+                          <a href="#" class="fa fa-twitter"></a>
+                      </li>
+                      <li>
+                          <a href="#" class="fa fa-google-plus"></a>
+                      </li>
+                      <li>
+                          <a href="#" class="fa fa-linkedin"></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="images/faculty/lalbahadur.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="title">LAL BAHADUR RAM</h3>
+                    <span class="post">Principal</span>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#"  target="_blank"class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-google-plus"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="our-team">
+              <div class="pic">
+                  <img src="images/faculty/awadhesh.jpg">
+              </div>
+              <div class="team-content">
+                  <h3 class="title">AWADHESH SHARMA</h3>
+                  <span class="post">Lecturer</span>
+              </div>
+              <ul class="social">
+                  <li>
+                      <a href="#"  target="_blank"class="fa fa-facebook"></a>
+                  </li>
+                  <li>
+                      <a href="#" class="fa fa-twitter"></a>
+                  </li>
+                  <li>
+                      <a href="#" class="fa fa-google-plus"></a>
+                  </li>
+                  <li>
+                      <a href="#" class="fa fa-linkedin"></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
 
 
-     
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="our-team">
+            <div class="pic">
+                <img src="images/faculty/kamlesh.jpg">
+            </div>
+            <div class="team-content">
+                <h3 class="title">Kamlesh Yadav</h3>
+                <span class="post">Astt. Teacher</span>
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="#"  target="_blank"class="fa fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-google-plus"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="our-team">
+          <div class="pic">
+              <img src="images/faculty/ramnaresh.jpg">
+          </div>
+          <div class="team-content">
+              <h3 class="title">Ram Naresh</h3>
+              <span class="post">Astt. Teacher</span>
+          </div>
+          <ul class="social">
+              <li>
+                  <a href="#"  target="_blank"class="fa fa-facebook"></a>
+              </li>
+              <li>
+                  <a href="#" class="fa fa-twitter"></a>
+              </li>
+              <li>
+                  <a href="#" class="fa fa-google-plus"></a>
+              </li>
+              <li>
+                  <a href="#" class="fa fa-linkedin"></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="our-team">
+        <div class="pic">
+            <img src="images/faculty/ramjee.jpg">
+        </div>
+        <div class="team-content">
+            <h3 class="title">Ramjee Singh Yadav</h3>
+            <span class="post">Astt. Teacher</span>
+        </div>
+        <ul class="social">
+            <li>
+                <a href="#"  target="_blank"class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-twitter"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-google-plus"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-linkedin"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="our-team">
+      <div class="pic">
+          <img src="images/faculty/subhash.jpg">
+      </div>
+      <div class="team-content">
+          <h3 class="title">Subhash Singh Yadav</h3>
+          <span class="post">Lecturer</span>
+      </div>
+      <ul class="social">
+          <li>
+              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-google-plus"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-linkedin"></a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+<div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="our-team">
+      <div class="pic">
+          <img src="images/faculty/ashok.jpg">
+      </div>
+      <div class="team-content">
+          <h3 class="title">Ashok Kumar Yadav</h3>
+          <span class="post">Astt. Teacher</span>
+      </div>
+      <ul class="social">
+          <li>
+              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-google-plus"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-linkedin"></a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+<div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="our-team">
+      <div class="pic">
+          <img src="images/faculty/pankaj.jpg">
+      </div>
+      <div class="team-content">
+          <h3 class="title">Pankaj Kumar</h3>
+          <span class="post">Astt. Teacher</span>
+      </div>
+      <ul class="social">
+          <li>
+              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-google-plus"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-linkedin"></a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+<div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="our-team">
+      <div class="pic">
+          <img src="images/faculty/ramnayan.jpg">
+      </div>
+      <div class="team-content">
+          <h3 class="title">Ramnayan Yadav</h3>
+          <span class="post">Lecturer</span>
+      </div>
+      <ul class="social">
+          <li>
+              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-google-plus"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-linkedin"></a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+<div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="our-team">
+      <div class="pic">
+          <img src="images/faculty/vijay.jpg">
+      </div>
+      <div class="team-content">
+          <h3 class="title">Vijay Kumar</h3>
+          <span class="post">Lecturer</span>
+      </div>
+      <ul class="social">
+          <li>
+              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-google-plus"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-linkedin"></a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+<div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="our-team">
+      <div class="pic">
+          <img src="images/faculty/sudarshan.jpg">
+      </div>
+      <div class="team-content">
+          <h3 class="title">Sudharshan Yadav</h3>
+          <span class="post">Lecturer</span>
+      </div>
+      <ul class="social">
+          <li>
+              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-google-plus"></a>
+          </li>
+          <li>
+              <a href="#" class="fa fa-linkedin"></a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+          </div>
+      </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
 
     
 
-          
+  
 
+    <!-- Section: Experts Details -->
 
-            
-            
-          </div>
-                  <!--counter API-->
-       <center> <div id="sfcfpc845qt6y26c2cbxhyyyk5ksfu7a52z"></div>
-<script type="text/javascript" src="https://counter10.wheredoyoucomefrom.ovh/private/counter.js?c=fpc845qt6y26c2cbxhyyyk5ksfu7a52z&down=async" async></script>
-<noscript><a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter10.wheredoyoucomefrom.ovh/private/freecounterstat.php?c=fpc845qt6y26c2cbxhyyyk5ksfu7a52z" border="0" title="web counter" alt="web counter"></a></noscript></center>
-
-<center><div id="sfchku8lxdz7s168c4a6cu65yl6xdpdqjqb"></div>
-<script type="text/javascript" src="https://counter10.wheredoyoucomefrom.ovh/private/counter.js?c=hku8lxdz7s168c4a6cu65yl6xdpdqjqb&down=async" async></script>
-<noscript><a href="https://www.freecounterstat.com" title="counter widget"><img src="https://counter10.wheredoyoucomefrom.ovh/private/freecounterstat.php?c=hku8lxdz7s168c4a6cu65yl6xdpdqjqb" border="0" title="counter widget" alt="counter widget"></a></noscript>
-</center>
-
-          
-        </div>
-
-
-
-         </div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692638.819959423!2d82.88792763208109!3d25.334673628528837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991e914c3c8ecd5%3A0x2855123d4bf3136c!2sSsic%20akabarpur!5e0!3m2!1sen!2sin!4v1573146792908!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   <!-- Footer -->
  <footer id="footer" class="footer divider layer-overlay overlay-dark-9">
@@ -481,7 +919,7 @@
             <ul class="list angle-double-right list-border">
             <li><a href="aboutus.html">About Us</a></li>
               <li><a href="courses.html">Our Courses</a></li>
-              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="#">Faculty</a></li>
               <li><a href="#">Scholarship</a></li>
               <li><a href="#">Download</a></li>              
             </ul>            
