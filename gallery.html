@@ -115,46 +115,55 @@
 }
 
 
-.container {
-    width: 80%;
-    margin: auto;
+
+
+
+
+.contain {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+  background: teal;
+  padding: 15px;
+  justify-content: space-around;
 }
 
-.card_wrapper {
-    column-gap: 5px;
-    column-count: 2;
+.card_wrapper{
+  display: flex;
+ 
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
-.card img {
+.card{
+  width: 550px;
+  height: 400px;
+  margin: 5px;
+}
+.contain img {
+  width: fit-content;
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+.contain img:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+
+@media only screen and (max-width : 400px)
+{
+  .card{
     width: 100%;
-}
-
-.galary_heading {
     
-    top: 0;
-    z-index:99999999;
-    padding: 00px;
-    background-color: rgb(214, 236, 255);
-    margin-bottom: 5px;
+    margin: 5px;
+  }
 }
 
-.galary_heading h1 {
-    color: darkorange;
-    text-align: center;
-    font-size: 50px;
-}
-
-@media (max-width: 576px) {
-    .card_wrapper {
-        column-count: 1;
-    }
-}
-
-@media (max-width: 992px) {
-    .card_wrapper {
-        column-count: 1;
-    }
-}
 
 @media only screen and (max-width : 600px)
 {
@@ -468,34 +477,25 @@
     
     
     <!--yas-->
- <div class="section-content">
+ 
            
   <body>
-    <div class="main">
-        <div class="galary_heading">
-            <h1>Photo Gallary</h1>
-        </div>
-        <div class="container">
+    
+        <div class="contain">
             <div class="card_wrapper">
                 <div class="card">
                     <img src="ssic/1.jpg"
                         alt="">
                 </div>
 
-                <div class="card">
-                  <img src="ssic/0.jpg"
-                      alt="">
-              </div>
+            
 
               <div class="card">
                 <img src="ssic/3.jpg"
                     alt="">
             </div>
 
-            <div class="card">
-              <img src="ssic/0.jpg"
-                  alt="">
-          </div>
+            
 
           <div class="card">
             <img src="ssic/5.jpg"
@@ -519,10 +519,10 @@
                
             </div>
         </div>
-    </div>
-</body>
+    
+
   
-</div>
+
     <!-- Section: Experts Details -->
         <section>
       <div class="container">
